@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calcultor v2</title>
+</head>
+<body>
+    <pre style="display: none;">
+        1. 기존 계산 프로그램 따라감
+        2. eval() 대체함수 찾기
+        3. Bin,OCt,Hexdecimal, decimal 구현 가능한 계산기
+        4. 유니코드 문제 ES6문법에 Map속성 넣어서 필요없게 만들기
+    </pre>
+    <Header>
+        <h3>JS 계산기 V2</h3>
+    </Header>
+    <section>
+        <div id="displyScreen">
+            <input type="text" name="display" class="scrnDisplay" oninput="" placeholder="과정" id="addSubject">
+            <input type="number" name="decimal" class="scrnDisplay" readonly placeholder="결과" id="toDecimal">
+            <input type="number" name="binary" class="scrnDisplay" readonly placeholder="2진수" id="toBinary">
+            <input type="number" name="octet" class="scrnDisplay" readonly placeholder="8진수" id="toOctet">
+            <input type="number" name="hexDecimal" class="scrnDisplay" readonly placeholder="16진수" id="toHexdecimal">
+        </div>
+        <div id="keyFrame">
+            <div class="saveFrame">
+                <button type="button" class="savePort" onclick=""></button>
+                <button type="button" class="savePort" onclick=""></button>
+            </div>
+            <div class="numberFrame">
+                <div class="numpad firstBack">
+                    <button type="button" class="numberBtn" onclick="">1</button>
+                    <button type="button" class="numberBtn" onclick="">2</button>
+                    <button type="button" class="numberBtn" onclick="">3</button>
+                    <button type="button" class="numberBtn" onclick="">🠔</button>
+                </div>
+                <div class="numpad secondDot">
+                    <button type="button" class="numberBtn" onclick="">4</button>
+                    <button type="button" class="numberBtn" onclick="">5</button>
+                    <button type="button" class="numberBtn" onclick="">6</button>
+                    <button type="button" class="numberBtn" onclick="">.</button>
+                </div>
+                <div class="numpad thirdZero">
+                    <button type="button" class="numberBtn" onclick="">7</button>
+                    <button type="button" class="numberBtn" onclick="">8</button>
+                    <button type="button" class="numberBtn" onclick="">9</button>
+                    <button type="button" class="numberBtn" onclick="">0</button>
+                </div>
+                <div class="numpad plusMinus">
+                    <button type="button" class="numberBtn" onclick="">+</button>
+                    <button type="button" class="numberBtn" onclick="">-</button>
+                    <button type="button" class="numberBtn" onclick="">*</button>
+                    <button type="button" class="numberBtn" onclick="">/</button>
+                </div>
+                <div class="numpad lastEqual">
+                    <button type="button" class="numberBtn" onclick="">C</button>
+                    <button type="button" class="numberBtn" onclick="">=</button>
+                    <button type="button" class="toggleBtn" onclick="">on/off</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="historyDisplay">
+
+        </div>
+    </footer>
+</body>
+</html>
