@@ -1,0 +1,86 @@
+body{
+    margin: auto 0;
+    width: 400px;
+    padding: 10px;
+}
+
+header{
+    background-color: aquamarine;
+
+}
+
+h3{
+    font-size: 36px;
+}
+section{
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.scrnDisplay{
+    width: 370px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+}
+
+#keyFrame {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.savePort{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.numberFrame{
+    margin-top: 20px;
+
+}
+
+.firstBack{
+    margin-bottom: 5px;
+}
+
+.secondDot{
+    margin-bottom: 5px;
+}
+.thirdZero{
+    margin-bottom: 5px;
+}
+.plusMinus{
+    margin-bottom: 5px;
+}
+.lastEqual{
+    margin-bottom: 5px;
+}
+.numberBtn {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border: 2px solid;
+    border-radius: 5px;
+    
+}
+
+.toggleBtn {
+    margin-left: 2px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#historyDisplay{
+    border: 1px solid;
+    height: 50px;
+    border-radius: 15px;
+}

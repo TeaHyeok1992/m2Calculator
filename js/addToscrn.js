@@ -39,6 +39,7 @@ function calculation(){
     }else{
         //일반 10진수 디스플레이에 값 입력
         decimalfin.value=retur;
+        console.log("10진수 값:"+retur);
 
         //계산식을 2진수로 변환 -- 2진수 디스플레이에 입력
         var returnToBinary = retur.toString(2);
@@ -55,10 +56,11 @@ function calculation(){
         octetfin.value= returnToOctet;
 
         //계산식을 16진수로 변환 -- 16진수 디스플레이에 입력
-        var returnToHexdecimal = retur.toString(16);
+        var returnToHexdecimal = retur.toString(16).toUpperCase();
         
         console.log("16진수 값:"+returnToHexdecimal);
         
+
         hexdecimalfin.value= returnToHexdecimal;
         
     }

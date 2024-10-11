@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Calcultor v2</title>
     <script src="js/addToscrn.js"></script>
+    <link rel="stylesheet" href="/css/mainScreen.css">
 </head>
 <body>
     <pre style="display: none;">
@@ -19,15 +20,15 @@
     <section>
         <div id="displyScreen">
             <input type="text" name="display" class="scrnDisplay" oninput="" placeholder="과정" id="addSubject">
-            <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="결과" id="toDecimal">
+            <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="10진수" id="toDecimal">
             <input type="text" name="binary" class="scrnDisplay" readonly placeholder="2진수" id="toBinary">
             <input type="text" name="octet" class="scrnDisplay" readonly placeholder="8진수" id="toOctet">
             <input type="text" name="hexDecimal" class="scrnDisplay" readonly placeholder="16진수" id="toHexdecimal">
         </div>
         <div id="keyFrame">
             <div class="saveFrame">
-                <button type="button" class="savePort" onclick=""></button>
-                <button type="button" class="savePort" onclick=""></button>
+                <button type="button" class="savePort" onclick="">저장</button>
+                <button type="button" class="savePort" onclick="">출력</button>
             </div>
             <div class="numberFrame">
                 <div class="numpad firstBack">
