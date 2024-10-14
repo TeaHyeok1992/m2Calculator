@@ -20,7 +20,8 @@ function appearWord(){
         
     }else{
         decimalValue >>> 0;
-        let mergedValue=decimalValue+2;
+        let mergedValue=decimalValue++;
+        console.log("unsigned value: "+mergedValue);
         if(mergedValue > 65535){
             decimalValue=0;
         }
@@ -50,7 +51,8 @@ function appearDword(){
         alert("값이 존재하지 않습니다, 먼저 계산식을 실행 해주세요.");
     }else{
         decimalValue >>> 0;
-        let mergedValue=decimalValue+2;
+        let mergedValue=decimalValue++;
+        console.log("unsigned value: "+mergedValue);
         if(mergedValue > 4294836225){
             decimalValue=0;
         }
