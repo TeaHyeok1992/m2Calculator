@@ -18,16 +18,26 @@ function appearWord(){
         alert("값이 존재하지 않습니다, 먼저 계산식을 실행 해주세요.");
         
     }else{
-        let wordValue=decimalValue & 0xFFFF;
-        //16비트 마스크 적용
-        if(wordValue==0){
+        decimalValue >>> 0;
+        let mergedValue=decimalValue+2;
+        if(mergedValue > 65535){
+            decimalValue=0;
+        }
+        //오버플로우 방지처리
+    
+        
+        
+        
+        //범위를 벗어날시 경고
+        if(decimalValue==0){
             alert("word범위를 벗어났습니다!!");
         }else{
-            console.log("word 범위:"+wordValue);
+            decimalValue=decimalValue-2;
+            console.log("word 범위:"+decimalValue);
             let ptag=document.getElementById('dTitle');
             ptag.innerHTML='word';
             console.log("word변경처리 미구현");
-
+            
         }
 
     }
@@ -40,12 +50,18 @@ function appearDword(){
     if(decimalValue==0){
         alert("값이 존재하지 않습니다, 먼저 계산식을 실행 해주세요.");
     }else{
-        let dWordValue= decimalValue & 0xFFFFFFFF;
-         //32비트 마스크 적용
-        if(dWordValue==0){
+        decimalValue >>> 0;
+        let mergedValue=decimalValue+2;
+        if(mergedValue > 4294836225){
+            decimalValue=0;
+        }
+        //오버플로우 방지처리
+         //범위를 벗어날시 경고
+        if(decimalValue==0){
             alert("Dword 범위를 벗어났습니다!!");
         }else{
-            console.log("Dword 범위:"+dWordValue);
+            decimalValue=decimalValue-2;
+            console.log("Dword 범위:"+decimalValue);
             let ptag=document.getElementById('dTitle');
             ptag.innerHTML='Dword';
             console.log("Dword 변경식 미구현")

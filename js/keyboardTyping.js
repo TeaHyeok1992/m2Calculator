@@ -36,7 +36,7 @@ function onlyNumeric(event){
         //A-Z 영문대문자
         //a-z 영문소문자
         console.log(event);
-        console.log("영문자,한글이 제거되었습니다.")
+        console.log("사칙연산기호, 소수점, 숫자만 입력 가능합니다.")
         //제어문으로 사칙연산 조사
         
         
