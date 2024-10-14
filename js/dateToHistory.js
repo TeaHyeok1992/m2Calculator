@@ -17,7 +17,7 @@ function saveHistory(){
 
 function updateHistoryDisplay() {
     const hisd = document.getElementById('historyDisplay');
-    hisd.innerHTML = 'History:<br>' + history.join('<br>');
+    hisd.innerHTML = 'History:' + history.join('\n');
     //History Display 새로쓰기
     //매회차마다 새로씀
 }

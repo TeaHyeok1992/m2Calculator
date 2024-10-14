@@ -23,7 +23,7 @@
         <div id="displyScreen">
             <p>과정</p>
             <input type="text" name="display" class="scrnDisplay" oninput="onlyNumeric(event)" placeholder="과정" id="addSubject" readonly="true">
-            <p>10진수</p>
+            <p id="dTitle">10진수</p>
             <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="10진수" id="toDecimal">
             <p>2진수</p>
             <input type="text" name="binary" class="scrnDisplay" readonly placeholder="2진수" id="toBinary">
@@ -61,8 +61,8 @@
                 <div class="numpad plusMinus">
                     <button type="button" class="numberBtn" onclick="add('+')">+</button>
                     <button type="button" class="numberBtn" onclick="add('-')">-</button>
-                    <button type="button" class="numberBtn" onclick="add('*')">*</button>
-                    <button type="button" class="numberBtn" onclick="add('/')">/</button>
+                    <button type="button" class="numberBtn" onclick="add('*')">X</button>
+                    <button type="button" class="numberBtn" onclick="add('/')">÷</button>
                 </div>
                 <div class="numpad lastEqual">
                     <button type="button" class="numberBtn" onclick="reset()">C</button>
@@ -73,8 +73,8 @@
         </div>
     </section>
     <footer>
-        <div id="historyDisplay">
-    
+        <div id="historyDisplayBox">
+            <textarea name="historyDisplay" id="historyDisplay" style="width: 400px; resize: none;"></textarea>
         </div>
         <p>copyright@</p>
     </footer>
