@@ -19,15 +19,19 @@ section{
     background: linear-gradient(to bottom,#60EB27,#E5FB00,#07F1C0);
 }
 
+#displyScreen p{
+    font-size: 10px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+
 .scrnDisplay{
     width: 370px;
-    margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 400;
     text-align: right;
-    display: block;
+    
 }
 
 #keyFrame {

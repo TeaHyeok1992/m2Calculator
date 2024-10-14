@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Calcultor v2</title>
-    <script src="js/addToscrn.js"></script>
-    <link rel="stylesheet" href="/css/mainScreen.css">
+    <script src="js/addToscrn.js"></script><!--계산,변환산출 기능,백스페이스-->
+    <script src="js/dateToHistory.js"></script><!--저장,출력기능-->
+    <script src="js/keyboardTyping.js"></script><!--키보드 입력 처리-->
+    <link rel="stylesheet" href="css/mainScreen.css"><!--계산기 화면 CSS-->
 </head>
 <body>
     <pre style="display: none;">
@@ -19,16 +21,21 @@
     </Header>
     <section>
         <div id="displyScreen">
-            <input type="text" name="display" class="scrnDisplay" oninput="" placeholder="과정" id="addSubject">
+            <p>과정</p>
+            <input type="text" name="display" class="scrnDisplay" oninput="onlyNumeric(event)" placeholder="과정" id="addSubject">
+            <p>10진수</p>
             <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="10진수" id="toDecimal">
+            <p>2진수</p>
             <input type="text" name="binary" class="scrnDisplay" readonly placeholder="2진수" id="toBinary">
+            <p>8진수</p>
             <input type="text" name="octet" class="scrnDisplay" readonly placeholder="8진수" id="toOctet">
+            <p>16진수</p>
             <input type="text" name="hexDecimal" class="scrnDisplay" readonly placeholder="16진수" id="toHexdecimal">
         </div>
         <div id="keyFrame">
             <div class="saveFrame">
-                <button type="button" class="savePort" onclick="">저장</button>
-                <button type="button" class="savePort" onclick="">출력</button>
+                <button type="button" class="savePort" onclick="saveHistory()">저장</button>
+                <button type="button" class="savePort" onclick="viewHistory()">출력</button>
             </div>
             <div class="numberFrame">
                 <div class="numpad firstBack">
@@ -65,8 +72,9 @@
     </section>
     <footer>
         <div id="historyDisplay">
-
+    
         </div>
+        <p>copyright@</p>
     </footer>
 </body>
 </html>
