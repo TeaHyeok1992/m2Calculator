@@ -15,7 +15,6 @@ h3{
 }
 section{
     border: 1px solid;
-    border-radius: 15px;
     background: linear-gradient(to bottom,#60EB27,#E5FB00,#07F1C0);
 }
 
@@ -34,6 +33,10 @@ section{
     
 }
 
+#addSubject:focus{
+    background-color: violet;
+}
+
 #keyFrame {
     padding: 10px;
     margin-left: 20px;
@@ -47,6 +50,10 @@ section{
     font-weight: 900;
     border: 2px solid;
     border-radius: 5px;
+}
+
+.savePort:active{
+    background-color: black;
 }
 
 .saveport .dword{
@@ -84,6 +91,10 @@ section{
     
 }
 
+.numberBtn:active{
+    background-color: black;
+}
+
 .toggleBtn {
     margin-left: 2px;
     font-weight: 700;
@@ -92,6 +103,10 @@ section{
     height: 30px;
     border: 2px solid;
     border-radius: 5px;
+}
+
+.toggleBtn:active{
+    background-color: black;
 }
 
 #historyDisplay{

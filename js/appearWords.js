@@ -1,13 +1,14 @@
-function reCalculation(number){
-    let calBtn=document.getElementById('equal');
-    console.log("변경된 값:"+number);
-    let calSubject=document.getElementById('addSubject');
-    console.log(calSubject);
-    calSubject.setAttribute('value',number);
-    calBtn.click;
+// function reCalculation(number){
+//     let calBtn=document.getElementById('equal');
+//     console.log("변경된 값:"+number);
+//     let calSubject=document.getElementById('addSubject');
+//     console.log(calSubject);
+//     calSubject.setAttribute('value',number);
     
-    console.log("재연산 매서드를 실행하였습니다.");
-}
+//     calBtn.click;
+    
+//     console.log("재연산 매서드를 실행하였습니다.");
+// }
 
 
 function appearWord(){
@@ -32,11 +33,9 @@ function appearWord(){
         if(decimalValue==0){
             alert("word범위를 벗어났습니다!!");
         }else{
-            decimalValue=decimalValue-2;
             console.log("word 범위:"+decimalValue);
             let ptag=document.getElementById('dTitle');
             ptag.innerHTML='word';
-            console.log("word변경처리 미구현");
             
         }
 
@@ -60,11 +59,10 @@ function appearDword(){
         if(decimalValue==0){
             alert("Dword 범위를 벗어났습니다!!");
         }else{
-            decimalValue=decimalValue-2;
             console.log("Dword 범위:"+decimalValue);
             let ptag=document.getElementById('dTitle');
             ptag.innerHTML='Dword';
-            console.log("Dword 변경식 미구현")
+            
     
         }
 

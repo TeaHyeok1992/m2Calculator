@@ -13,11 +13,11 @@
 </head>
 <body>
     <pre style="display: none;">
-        1. 특수문자 사용 반려 구현
-        2. Keyboard 사용가능/불가능 토글 작성
+        
     </pre>
     <Header>
         <h3>JS 계산기 V2</h3>
+        
     </Header>
     <section>
         <div id="displyScreen">
@@ -61,20 +61,21 @@
                 <div class="numpad plusMinus">
                     <button type="button" class="numberBtn" onclick="add('+')">+</button>
                     <button type="button" class="numberBtn" onclick="add('-')">-</button>
-                    <button type="button" class="numberBtn" onclick="add('*')">X</button>
+                    <button type="button" class="numberBtn" onclick="add('*')">x</button>
                     <button type="button" class="numberBtn" onclick="add('/')">÷</button>
                 </div>
                 <div class="numpad lastEqual">
                     <button type="button" class="numberBtn" onclick="reset()">C</button>
                     <button type="button" class="numberBtn" onclick="calculation()" id="equal">=</button>
                     <button type="button" class="toggleBtn" onclick="keyboardToggle()" id="toggle">keyboard</button>
+                    <div id="onOff">키보드사용 OFF</div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <div id="historyDisplayBox">
-            <textarea name="historyDisplay" id="historyDisplay" style="width: 400px; resize: none;"></textarea>
+            <textarea name="historyDisplay" id="historyDisplay" style="width: 395px; resize: none;"></textarea>
         </div>
         <p>copyright@</p>
     </footer>
