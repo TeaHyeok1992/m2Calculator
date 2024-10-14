@@ -26,24 +26,19 @@ function onlyNumeric(event){
     // const joongPattern = /[\u314F-\u3163]/g;  // 한글 중성의 유니코드 범위
     // const jongPattern = /[\u11A8-\u11C2]/g;  // 한글 종성의 유니코드 범위
     //const koreanPattern = /[\u1100-\u11FF\u3131-\u318E\uAC00-\uD7A3]/g;  // 자모 및 완성형 한글 포함
+    // 특수문자 전체 \{\}\[\]\/?.,;:|\)*~`!^\-_+┼<>@\#$%&\'\"\\\(\=
     const input = event.target.value;
         // event.target.value = input.replace(/[가-힣a-zA-Z]/g, '');
-        event.target.value = input.replace(/[A-Za-z\u1100-\u11FF\u3131-\u318E\uAC00-\uD7A3]/g,'');
+        event.target.value = input.replace(/[A-Za-z\u1100-\u11FF\u3131-\u318E\uAC00-\uD7A3\\{\}\[\]?,;:|\)~`!^\_┼<>@\#$%&\'\"\\\(]/g,'');
+        //사칙연산기호 및 소수점만 허용 하는 정규표현식
+        //해당 정규표현식에 반하는 법칙이 입력되었을 경우 공백으로 바꿈
+        //Map으로 구현을 만약에 한다면 String type으로 해야될것
         //A-Z 영문대문자
         //a-z 영문소문자
         console.log(event);
         console.log("영문자,한글이 제거되었습니다.")
         //제어문으로 사칙연산 조사
         
-
-        // event.target.value = input.replace(choPattern,'');
-        // console.log("한글초성이 제거되었습니다.")
-        // event.target.value = input.replace(joongPattern,'');
-        // console.log("한글중성이 제거되었습니다.")
-        // event.target.value = input.replace(jongPattern,'');
-        // console.log("한글종성이 제거되었습니다.")
-        //정규표현식을 통한 입력시 자동삭제 기능
-        //^\x00-\x7F 기본적인 아스키만 입력가능하게 해주는 유니코드 
         
         
 

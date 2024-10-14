@@ -7,14 +7,14 @@
     <script src="js/addToscrn.js"></script><!--계산,변환산출 기능,백스페이스-->
     <script src="js/dateToHistory.js"></script><!--저장,출력기능-->
     <script src="js/keyboardTyping.js"></script><!--키보드 입력 처리-->
+    <script src="js/keyboardToggle.js"></script><!--키보드 입력 토글-->
+    <script src="js/appearWords.js"></script><!--word 표기-->
     <link rel="stylesheet" href="css/mainScreen.css"><!--계산기 화면 CSS-->
 </head>
 <body>
     <pre style="display: none;">
-        1. 기존 계산 프로그램 따라감
-        2. eval() 대체함수 찾기
-        3. Bin,OCt,Hexdecimal, decimal 구현 가능한 계산기
-        4. 유니코드 문제 ES6문법에 Map속성 넣어서 필요없게 만들기
+        1. 특수문자 사용 반려 구현
+        2. Keyboard 사용가능/불가능 토글 작성
     </pre>
     <Header>
         <h3>JS 계산기 V2</h3>
@@ -22,7 +22,7 @@
     <section>
         <div id="displyScreen">
             <p>과정</p>
-            <input type="text" name="display" class="scrnDisplay" oninput="onlyNumeric(event)" placeholder="과정" id="addSubject">
+            <input type="text" name="display" class="scrnDisplay" oninput="onlyNumeric(event)" placeholder="과정" id="addSubject" readonly="true">
             <p>10진수</p>
             <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="10진수" id="toDecimal">
             <p>2진수</p>
@@ -36,6 +36,8 @@
             <div class="saveFrame">
                 <button type="button" class="savePort" onclick="saveHistory()">저장</button>
                 <button type="button" class="savePort" onclick="viewHistory()">출력</button>
+                <button type="button" class="savePort dword" onclick="appearWord()">word</button>
+                <button type="button" class="savePort dword" onclick="appearDword()">Dword</button>
             </div>
             <div class="numberFrame">
                 <div class="numpad firstBack">
@@ -64,8 +66,8 @@
                 </div>
                 <div class="numpad lastEqual">
                     <button type="button" class="numberBtn" onclick="reset()">C</button>
-                    <button type="button" class="numberBtn" onclick="calculation()">=</button>
-                    <button type="button" class="toggleBtn" onclick="">keyboard</button>
+                    <button type="button" class="numberBtn" onclick="calculation()" id="equal">=</button>
+                    <button type="button" class="toggleBtn" onclick="keyboardToggle()" id="toggle">keyboard</button>
                 </div>
             </div>
         </div>

@@ -49,6 +49,10 @@ section{
     border-radius: 5px;
 }
 
+.saveport .dword{
+    margin-top: 20px;
+}
+
 .numberFrame{
     margin-top: 20px;
 
@@ -82,6 +86,8 @@ section{
 
 .toggleBtn {
     margin-left: 2px;
+    font-weight: 700;
+    text-align: center;
     width: 70px;
     height: 30px;
     border: 2px solid;
