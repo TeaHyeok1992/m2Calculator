@@ -99,4 +99,6 @@ function reset(){
     bifin.value="";
     octfin.value="";
     hexfin.value="";
+    let decimalTitle = document.getElementById('dTitle');
+    decimalTitle.innerHTML="DEX";
 }

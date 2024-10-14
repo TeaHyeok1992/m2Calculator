@@ -9,11 +9,11 @@
         toggleDisplay.removeAttribute('readOnly');
         //readOnly(읽기전용)속성을 삭제
         let onoff= document.getElementById('onOff');
-        onoff.innerHTML="키보드사용 ON";
+        onoff.innerHTML="Keyboard ON";
     }else{
         toggleDisplay.setAttribute('readOnly',true);
         //아닐경우 readOnly 기능을 추가
         let onoff= document.getElementById('onOff');
-        onoff.innerHTML="키보드사용 OFF";
+        onoff.innerHTML="Keyboard OFF";
     }
  }

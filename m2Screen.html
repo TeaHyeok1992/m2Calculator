@@ -16,20 +16,20 @@
         
     </pre>
     <Header>
-        <h3>JS 계산기 V2</h3>
+        <h3>Js Calculator V2</h3>
         
     </Header>
     <section>
         <div id="displyScreen">
-            <p>과정</p>
+            <p>Progress</p>
             <input type="text" name="display" class="scrnDisplay" oninput="onlyNumeric(event)" placeholder="과정" id="addSubject" readonly="true">
-            <p id="dTitle">10진수</p>
+            <p id="dTitle">DEX</p>
             <input type="text" name="decimal" class="scrnDisplay" readonly placeholder="10진수" id="toDecimal">
-            <p>2진수</p>
+            <p>BIN</p>
             <input type="text" name="binary" class="scrnDisplay" readonly placeholder="2진수" id="toBinary">
-            <p>8진수</p>
+            <p>OCT</p>
             <input type="text" name="octet" class="scrnDisplay" readonly placeholder="8진수" id="toOctet">
-            <p>16진수</p>
+            <p>HEX</p>
             <input type="text" name="hexDecimal" class="scrnDisplay" readonly placeholder="16진수" id="toHexdecimal">
         </div>
         <div id="keyFrame">
@@ -68,7 +68,7 @@
                     <button type="button" class="numberBtn" onclick="reset()">C</button>
                     <button type="button" class="numberBtn" onclick="calculation()" id="equal">=</button>
                     <button type="button" class="toggleBtn" onclick="keyboardToggle()" id="toggle">keyboard</button>
-                    <div id="onOff">키보드사용 OFF</div>
+                    <div id="onOff">Keyboard OFF</div>
                 </div>
             </div>
         </div>
