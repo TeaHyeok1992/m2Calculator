@@ -25,7 +25,7 @@ function appearWord(){
         if(mergedValue < -32768 || mergedValue > 32767 ){
             decimalValue=0;
         }
-        //javascripts는 64비트 연산이 기본이기 때문에
+        //javascripts는 부동소수점 64비트(53비트) 연산이 기본이기 때문에
         //오버플로우 방지처리
     
         
@@ -56,7 +56,7 @@ function appearDword(){
         if(mergedValue > 2147483647 || mergedValue < -2147483648){
             decimalValue=0;
         }
-        //javascripts는 64비트 연산이 기본이기 때문에
+        //javascripts는 부동소수점 64비트(53비트) 연산이 기본이기 때문에
         //오버플로우 방지처리
          //범위를 벗어날시 경고
         if(decimalValue==0){
