@@ -100,5 +100,5 @@ function reset(){
     octfin.value="";
     hexfin.value="";
     let decimalTitle = document.getElementById('dTitle');
-    decimalTitle.innerHTML="DEX";
+    decimalTitle.innerHTML="DEC";
 }
