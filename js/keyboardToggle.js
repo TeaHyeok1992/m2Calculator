@@ -3,7 +3,7 @@
     let toggleDisplay = document.getElementById('addSubject');
     
     console.log(toggleDisplay);
-    console.log(toggleDisplay.readOnly);
+    console.log("읽기전용 존재여부: "+toggleDisplay.readOnly);
     if(toggleDisplay.readOnly){
         //화면의 속성에서 readOnly가 True일 경우에
         toggleDisplay.removeAttribute('readOnly');
