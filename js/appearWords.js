@@ -19,12 +19,13 @@ function appearWord(){
         alert("값이 존재하지 않습니다, 먼저 계산식을 실행 해주세요.");
         
     }else{
-        decimalValue >>> 0;
-        let mergedValue=decimalValue++;
+        
+        let mergedValue=decimalValue;
         console.log("unsigned value: "+mergedValue);
-        if(mergedValue > 65535){
+        if(mergedValue < -32768 || mergedValue > 32767 ){
             decimalValue=0;
         }
+        //javascripts는 64비트 연산이 기본이기 때문에
         //오버플로우 방지처리
     
         
@@ -50,12 +51,12 @@ function appearDword(){
     if(decimalValue==0){
         alert("값이 존재하지 않습니다, 먼저 계산식을 실행 해주세요.");
     }else{
-        decimalValue >>> 0;
-        let mergedValue=decimalValue++;
+        let mergedValue=decimalValue;
         console.log("unsigned value: "+mergedValue);
-        if(mergedValue > 4294836225){
+        if(mergedValue > 2147483647 || mergedValue < -2147483648){
             decimalValue=0;
         }
+        //javascripts는 64비트 연산이 기본이기 때문에
         //오버플로우 방지처리
          //범위를 벗어날시 경고
         if(decimalValue==0){
