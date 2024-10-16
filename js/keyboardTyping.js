@@ -38,7 +38,16 @@ function onlyNumeric(event){
         console.log(event);
         console.log("사칙연산기호, 소수점, 숫자만 입력 가능합니다.")
         //제어문으로 사칙연산 조사
+    let ptag = document.getElementById('dTitle'); //
+    if(ptag.innerHTML == 'DEC'){
+
+    }else if(ptag.innerHTML == 'word'){
+        console.log("word계산기");
+        console.log(typeof input);
+    }else if(ptag.innerHTML == 'Dword'){
+        console.log("Dword계산기");
         
+    }    
         
         
 

@@ -27,6 +27,12 @@ function calculation(){
     //일반적인 계산
     var values=document.getElementById('addSubject');
     var retur=eval(values.value);
+    if(retur >0 && retur < 1){
+        console.log("소수가 감지되었습니다.");
+        
+        
+    }
+    //소수점 2째자리까지 강제로 반올림-- 부동소수점 에러 처리
     //eval은 계산하는 매서드
     var decimalfin=document.getElementById('toDecimal');//10진수 결과 창
     var binaryfin=document.getElementById('toBinary');//2진수 결과 창
@@ -38,18 +44,20 @@ function calculation(){
 
     }else{
         //일반 10진수 디스플레이에 값 입력
-        decimalfin.value=retur;
+        decimalfin.value=Math.round(retur*10000000000)/10000000000;
         console.log("10진수 값:"+retur);
 
         //계산식을 2진수로 변환 -- 2진수 디스플레이에 입력
         var returnToBinary = retur.toString(2);
-        
+        console.log("현재 2진수값의 타입"+typeof returnToBinary);
+        //returnToBinary=Number(returnToBinary).toFixed(3);
         console.log("2진수 값:"+returnToBinary);
         
         binaryfin.value= returnToBinary;
 
         //계산식을 8진수로 변환 -- 8진수 디스플레이에 입력
         var returnToOctet = retur.toString(8);
+        console.log("현재 8진수값의 타입"+typeof returnToOctet);
         
         console.log("8진수 값:"+returnToOctet);
         
@@ -57,6 +65,7 @@ function calculation(){
 
         //계산식을 16진수로 변환 -- 16진수 디스플레이에 입력
         var returnToHexdecimal = retur.toString(16).toUpperCase();
+        console.log("현재 16진수값의 타입"+typeof returnToHexdecimal);
         
         console.log("16진수 값:"+returnToHexdecimal);
         
